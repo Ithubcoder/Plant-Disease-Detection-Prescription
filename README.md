@@ -1,68 +1,94 @@
-🌿 Plant Disease Detection & Prescription
+# 🌿 Plant Disease Detection & Prescription
 
-An AI-powered web application that detects plant leaf diseases using a deep learning model and provides disease details, confidence score, and health prescriptions to cure or prevent infections.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Built with TensorFlow and Streamlit, this project helps farmers, gardeners, and researchers to quickly identify plant health issues through image-based diagnosis.
+---
 
-🚀 Features
+## 🧠 Project Overview
 
-📸 Image Upload & Analysis – Upload a leaf image to get instant predictions.
+**Plant Disease Detection & Prescription** is an AI-powered web application that detects plant leaf diseases using a deep learning model and provides **disease information, confidence score, and cure suggestions**.  
+The app is built using **TensorFlow** and **Streamlit** for real-time diagnosis and user interaction.
 
-🧠 Deep Learning Model – Uses a CNN trained on the PlantVillage dataset for high accuracy.
+---
 
-📊 Top-3 Prediction Visualization – Displays top disease predictions with confidence scores.
+## 🚀 Features
 
-🌱 Health Diagnosis – Identifies whether the plant is healthy or infected.
+- 📸 Upload leaf images for instant disease prediction  
+- 🧠 Deep Learning model trained on the *PlantVillage* dataset  
+- 📊 Displays top-3 prediction results with confidence levels  
+- 🌱 Classifies plant health (Healthy or Infected)  
+- 💊 Suggests remedies and preventive measures  
+- 🌗 Modern UI with metrics and visuals  
 
-💊 Prescription System – Suggests remedies, preventive tips, and best practices.
+---
 
-🌗 Dark Mode UI – A modern, visually appealing interface with animations and metrics.
+## 🧩 Tech Stack
 
-🧩 Tech Stack
+| Component | Technology Used |
+|------------|------------------|
+| **Frontend** | Streamlit |
+| **Backend / Model** | TensorFlow, Keras, NumPy |
+| **Data Handling** | Pandas, OpenCV |
+| **Visualization** | Matplotlib |
+| **Dataset** | [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease) |
 
-Frontend: Streamlit
+---
 
-Backend / Model: TensorFlow, Keras, NumPy
+## ⚙️ How It Works
 
-Data Handling: Pandas, OpenCV
+1. Upload a clear image of the plant leaf.  
+2. The CNN model processes the image.  
+3. The system predicts:
+   - 🦠 Disease name  
+   - 📈 Confidence score  
+   - 💊 Prescription and prevention methods  
+4. Visualizes top-3 predictions using a bar graph.
 
-Visualization: Matplotlib
+---
 
-Dataset: PlantVillage Dataset
+## 📂 Project Structure
 
-⚙️ How It Works
-
-Upload a clear image of a plant leaf.
-
-The CNN model processes the image and predicts the disease.
-
-The app displays:
-
-The predicted disease name
-
-The confidence score
-
-Prescriptions and preventive measures
-
-Top-3 predictions are visualized for transparency.
-
-📂 Project Structure
 plant_disease_app/
 │
 ├── model/
-│   └── plant_disease_model.h5
+│ └── plant_disease_model.h5
 │
-├── utils.py
 ├── app.py
+├── utils.py
 ├── requirements.txt
 └── README.md
 
+yaml
+Copy code
+
+---
+
+## 🧪 Installation & Usage
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/your-username/plant-disease-detection.git
+   cd plant-disease-detection
+Install dependencies
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the app
+
+bash
+Copy code
+streamlit run app.py
+Upload a plant leaf image and get instant disease detection with prescription!
+
 💡 Future Enhancements
+📱 Mobile-optimized responsive UI
 
-📱 Mobile-friendly responsive UI
+🌍 Real-time API for crop health monitoring
 
-🌍 Real-time disease tracking via API integration
+🗣️ Voice-based diagnosis system
 
-🗣️ Voice-based diagnosis and prescription suggestion
-
-☁️ Deployment on Streamlit Cloud / Hugging Face Spaces
+☁️ Deploy on Streamlit Cloud / Hugging Face Spaces
